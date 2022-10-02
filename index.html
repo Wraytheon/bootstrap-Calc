@@ -13,40 +13,64 @@
     <link rel="stylesheet" href="assets/css/custom.css">
   </head>
   <body>
-    <div class="calculator card">
+ <h1 style="text-align:center">Calculator App</h1>
 
-    <input type="text" class="calculator-screen z-depth-1" value="" disabled />
+    <div class="container">
 
-    <div class="calculator-keys">
+    <br>
 
-      <button type="button" class="operator btn btn-info" value="+">+</button>
-      <button type="button" class="operator btn btn-info" value="-">-</button>
-      <button type="button" class="operator btn btn-info" value="*">&times;</button>
-      <button type="button" class="operator btn btn-info" value="/">&divide;</button>
+    <table>
 
-      <button type="button" value="7" class="btn btn-light waves-effect">7</button>
-      <button type="button" value="8" class="btn btn-light waves-effect">8</button>
-      <button type="button" value="9" class="btn btn-light waves-effect">9</button>
+        <tr>
 
+            <td colspan="3"><input type='text' id='result' class ='screen' style="text-align: right;"></td>
 
-      <button type="button" value="4" class="btn btn-light waves-effect">4</button>
-      <button type="button" value="5" class="btn btn-light waves-effect">5</button>
-      <button type="button" value="6" class="btn btn-light waves-effect">6</button>
+            <td>
 
+                <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
 
-      <button type="button" value="1" class="btn btn-light waves-effect">1</button>
-      <button type="button" value="2" class="btn btn-light waves-effect">2</button>
-      <button type="button" value="3" class="btn btn-light waves-effect">3</button>
+            </td>
 
+        </tr>
 
-      <button type="button" value="0" class="btn btn-light waves-effect">0</button>
-      <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
-      <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+    </table>
 
-      <button type="button" class="equal-sign operator btn btn-default" value="=">=</button>
+    <div class="keys">
 
-    </div>
-  </div>
+    <input type="button" value="7" class="button" onClick="display('7')"></input>
+
+    <input type="button" value="8" class="button " onClick="display('8')"></input>
+
+    <input type="button" value="9" class="button" onClick="display('9')"></input>
+
+    <input type="button" value="/" class="operator" onClick="display('/')"></input>
+
+    <input type="button" value="4" class="button" onClick="display('4')"></input>
+
+    <input type="button" value="5" class="button" onClick="display('5')"></input>
+
+    <input type="button" value="6" class="button" onClick="display('6')"></input>
+
+    <input type="button" value="*" class="operator" onClick="display('*')"></input>
+
+    <input type="button" value="1" class="button" onClick="display('1')"></input>
+
+    <input type="button" value="2" class="button" onClick="display('2')"></input>
+
+    <input type="button" value="3" class="button" onClick="display('3')"></input>
+
+    <input type="button" value="-" class="operator" onClick="display('-')"></input>
+
+    <input type="button" value="0" class="button" onClick="display('0')"></input>
+
+    <input type="button" value="." class="button" onClick="display('.')"></input>
+
+    <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+
+    <input type="button" value="+" class="operator" onClick="display('+')"></input>
+
+</div> 
+
 </div>
     <!--*Entire page-->
     <!-- <div id="app" class="container">
